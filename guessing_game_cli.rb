@@ -12,7 +12,7 @@ end
 
 
 def run_guessing_game
-  computer_number = random_number_generator
+  computer_number = random_number_generator.to_s
   user_input_prompt
   user_guessed = gets_user_input
   if user_guessed == computer_number
@@ -21,5 +21,5 @@ def run_guessing_game
     puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{computer_number}."
-
+  end
 end
